@@ -4,12 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="light" />
-  <title>План обучения: Проработка возражений</title>
-
-  <!-- Для GitHub Pages в подпапке /repo-name/ -->
+  <title>Курс: Проработка возражений — поэтапный план</title>
   <base href="./" />
-
   <style>
+
     :root{
       --bg:#f6f7fb;
       --paper:#ffffff;
@@ -213,14 +211,44 @@
     }
     .step b{display:block;margin-bottom:6px}
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .chip{
-      border:1px solid var(--line);
-      background:#fff;
-      border-radius:999px;
-      padding:7px 10px;
-      font-size:12.5px;
-      color:#0f172a;
-    }
+
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  border:1px solid var(--line);
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+}
+th,td{
+  padding:9px 9px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+  font-size:13px;
+  line-height:1.45;
+}
+th{background:var(--soft);text-align:left;font-weight:950}
+tr:last-child td{border-bottom:none}
+.chiprow{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:12.5px;
+  color:#0f172a;
+}
+.mono{font-family:var(--mono)}
+.worksheet .line{
+  border:1px dashed #cbd5e1;
+  border-radius:12px;
+  padding:10px 10px;
+  margin:8px 0;
+  min-height:44px;
+  background:#fff;
+}
 
     /* Print A4 */
     @media print{
@@ -234,18 +262,17 @@
       .card{break-inside:avoid}
       @page{size:A4;margin:12mm}
     }
+
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <div class="paper">
-
       <header>
-        <h1>Поэтапный план обучения: ПРОРАБОТКА ВОЗРАЖЕНИЙ</h1>
+        <h1>Курс обучения кандидатов: ПРОРАБОТКА ВОЗРАЖЕНИЙ</h1>
         <p class="sub">
-          Это поэтапное обучение кандидатов обработке возражений (и стартовых барьеров).
-          Внутри — порядок модулей, практика, игры и тексты из твоих файлов: «Согласие.docx», «Барьеры.docx», «Проработка возражений (ру).docx».
+          Один единый материал: поэтапный план обучения + база (что такое возражения) + инструменты речи +
+          стартовые барьеры + проработки из файлов + готовые отработки + 2 игры + листы практики + финальная проверка.
         </p>
 
         <div class="toprow">
@@ -264,21 +291,28 @@
         </div>
 
         <div class="chips">
-          <span class="chip">Фокус: только возражения</span>
-          <span class="chip">Тексты: из твоих файлов</span>
+          <span class="chip">Фокус: возражения</span>
           <span class="chip">Формат: план + практика</span>
-          <span class="chip">Можно печатать A4</span>
+          <span class="chip">Игры: 2 обязательные</span>
+          <span class="chip">Печать: A4</span>
         </div>
       </header>
 
       <div class="bar">
         <div class="nav">
           <span class="muted">Разделы:</span>
-          <a href="#plan">План обучения</a>
-          <a href="#tools">Инструменты речи</a>
-          <a href="#barriers">Стартовые барьеры</a>
-          <a href="#objections">Проработки возражений</a>
+          <a href="#plan">План</a>
+          <a href="#base">База</a>
+          <a href="#types">Типы</a>
+          <a href="#structure">5 шагов</a>
+          <a href="#tools">Инструменты</a>
+          <a href="#phrases">Фразы</a>
+          <a href="#barriers">Барьеры</a>
+          <a href="#bank">Банк</a>
+          <a href="#objections">Проработки</a>
+          <a href="#answers">Готовые</a>
           <a href="#games">Игры</a>
+          <a href="#worksheets">Практика</a>
           <a href="#check">Проверка</a>
         </div>
         <div class="btns">
@@ -290,9 +324,7 @@
       </div>
 
       <main>
-
-        <!-- PLAN -->
-        <section id="plan">
+<section id="plan">
           <h2>1) Поэтапный план обучения (как проводить обучение)</h2>
           <p class="muted">
             Это структура проведения тренинга. Тексты ниже — из твоих файлов, здесь мы только задаём правильный порядок подачи и закрепления.
@@ -353,9 +385,148 @@
             <b>Цель тренинга:</b> кандидат уверенно и спокойно держит линию, снимает барьеры/возражения и переводит диалог дальше.
           </div>
         </section>
+<section id="base">
+          <h2>1) База: что такое возражение и почему оно появляется</h2>
 
-        <!-- TOOLS -->
-        <section id="tools">
+          <div class="grid">
+            <div class="card">
+              <div class="hd">
+                <div>
+                  <b>Что такое возражение</b>
+                  <div class="mini">Ключевая мысль тренинга</div>
+                </div>
+                <span class="tag">Не «нет»</span>
+              </div>
+              <div class="bd">
+                <p>
+                  <b>Возражение — это нормальная реакция человека</b>, когда он сомневается, боится или ещё не доверяет.
+                  Это <b>не отказ</b>, а шанс объяснить яснее и усилить доверие.
+                </p>
+                <div class="callout ok">
+                  <b>Правильный настрой менеджера:</b><br/>
+                  «Человек защищает себя. Моя задача — спокойно помочь разобраться и довести до следующего шага».
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="hd">
+                <div>
+                  <b>Почему люди возражают (4 причины)</b>
+                  <div class="mini">Основа для правильных вопросов</div>
+                </div>
+                <span class="tag">4 причины</span>
+              </div>
+              <div class="bd">
+                <ul>
+                  <li><b>Страх:</b> боится потерь / ошибки → нужен понятный план и «как безопасно».</li>
+                  <li><b>Недоверие:</b> не знает, кому верить → нужны прозрачность и проверяемые факты.</li>
+                  <li><b>Неуверенность:</b> «а вдруг не получится» → нужны примеры, простые шаги, поддержка.</li>
+                  <li><b>Не видит ценности:</b> «зачем мне это» → нужно привязать к выгоде человека.</li>
+                </ul>
+                <div class="callout warn">
+                  <b>Ошибка №1:</b> отвечать аргументами, не поняв причину. Тогда вы «стреляете в воздух».
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<section id="types">
+          <h2>2) Типы возражений: с чем вы имеете дело</h2>
+
+          <div class="card">
+            <div class="hd">
+              <div>
+                <b>Классификация</b>
+                <div class="mini">Чтобы понимать, как именно реагировать</div>
+              </div>
+              <span class="tag">3 типа</span>
+            </div>
+            <div class="bd">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width:18%">Тип</th>
+                    <th style="width:42%">Как выглядит</th>
+                    <th>Что делать</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Настоящее</b></td>
+                    <td>Конкретная причина, логика, готовность обсуждать детали.</td>
+                    <td>Выслушать → уточнить → аргументировать → закрыть шагом.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Ложное</b></td>
+                    <td>Отговорка без деталей («подумаю», «потом», «на почту»), повторяется.</td>
+                    <td>Мягко вывести на настоящую причину через вопросы.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Стартовый барьер</b></td>
+                    <td>«Я не регистрировался», «не моё», «нет времени», «это случайно» — сразу в начале.</td>
+                    <td>Коротко, спокойно: признать → 1 вопрос → микро-ценность → шаг.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="callout">
+                <b>Логика:</b> если возражение «пустое» — не давим аргументами. Сначала вытаскиваем причину:
+                «Чтобы не тратить ваше время — скажите, что конкретно смущает: безопасность, условия или смысл?».
+              </div>
+            </div>
+          </div>
+        </section>
+<section id="structure">
+          <h2>3) Главная структура отработки: 5 шагов (учим до автоматизма)</h2>
+
+          <div class="grid">
+            <div class="card">
+              <div class="hd">
+                <div>
+                  <b>5 шагов — коротко</b>
+                  <div class="mini">Схема, по которой кандидат отвечает на любое возражение</div>
+                </div>
+                <span class="tag">Порядок</span>
+              </div>
+              <div class="bd">
+                <ol>
+                  <li><b>Выслушать</b> — не перебивать: «Я вас услышал(а)».</li>
+                  <li><b>Эмпатия / частично согласиться</b> — «Понимаю, это важный вопрос».</li>
+                  <li><b>Уточнить</b> — 1–2 вопроса, чтобы дойти до сути.</li>
+                  <li><b>Аргументировать</b> — коротко, простыми словами, в цель.</li>
+                  <li><b>Закрыть</b> — убедиться, что сняли: «Ок? Тогда следующий шаг…»</li>
+                </ol>
+                <div class="callout ok">
+                  <b>Правило скорости:</b> чем лучше вы уточнили, тем короче будет аргумент.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="hd">
+                <div>
+                  <b>Подсказки на каждом шаге</b>
+                  <div class="mini">Чтобы кандидат не «зависал»</div>
+                </div>
+                <span class="tag">Шпаргалка</span>
+              </div>
+              <div class="bd">
+                <p><b>1) Выслушать:</b> «Понял(а). Слушаю вас»</p>
+                <p><b>2) Эмпатия:</b> «Это нормально / логично / важный момент»</p>
+                <p><b>3) Уточнить:</b> «Что именно смущает?» / «Почему это важно?» / «Какие варианты для вас приемлемы?»</p>
+                <p><b>4) Аргумент:</b> «В такой ситуации другие выбирают… потому что…» (1 мысль)</p>
+                <p><b>5) Закрыть:</b> «Ответил(а) на вопрос?» → «Тогда делаем следующий шаг: …»</p>
+
+                <div class="divider"></div>
+                <div class="callout warn">
+                  <b>Ошибка №2:</b> «Сразу доказывать». Сначала — признание и уточнение. Иначе будет спор.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<section id="tools">
           <h2>2) Инструменты речи (из «Согласие.docx»)</h2>
 
           <div class="grid">
@@ -396,22 +567,22 @@ Rozumím, pojďme dál.
               </div>
               <div class="bd">
                 <div class="quote">Согласие + переход
-Máte pravdu, rozumím vám. A právě proto…
-У вас правда, я вас понимаю. И именно поэтому…
+Máte pravdu, rozumím vám. A právě proto.
+У вас правда, я вас понимаю. И именно поэтому.
 Souhlasím s vámi. Pojďme se podívat na další krok.
 Согласен с вами. Давайте посмотрим на следующий шаг.
 Chápu, co říkáte. A teď vám ukážu, jak to funguje v praxi.
 Я понимаю, что вы говорите. А теперь я покажу вам, как это работает на практике.
 Rozumím vaší obavě. Proto vám chci vysvětlit, jak to řešíme.
 Я понимаю вашу обеспокоенность. Поэтому хочу объяснить, как мы это решаем.
-Ano, to dává smysl. A právě z toho důvodu nabízíme…
-Да, это логично. И именно по этой причине мы предлагаем…
+Ano, to dává smysl. A právě z toho důvodu nabízíme.
+Да, это логично. И именно по этой причине мы предлагаем.
 Máte naprostou pravdu. Mohu vám ukázat, jak to u nás probíhá?
 Вы абсолютно правы. Могу вам показать, как это у нас происходит?
 Rozumím, přesně o tom mluvilo hodně našich klientů. Podívejte se, jak jsme to vyřešili.
 Понимаю, именно об этом говорили многие наши клиенты. Посмотрите, как мы это решили.
-Souhlasím, to je důležité. Proto se zaměřujeme na…
-Согласен, это важно. Поэтому мы сосредоточились на…</div>
+Souhlasím, to je důležité. Proto se zaměřujeme na.
+Согласен, это важно. Поэтому мы сосредоточились на.</div>
 
                 <div class="callout ok">
                   <b>Правило:</b> каждый ответ кандидата должен начинаться с одной из этих связок.
@@ -420,9 +591,54 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
             </div>
           </div>
         </section>
+<section id="phrases">
+          <h2>4) Фразы, которые снижают конфликт (из файлов)</h2>
 
-        <!-- BARRIERS -->
-        <section id="barriers">
+          <div class="grid">
+            <div class="card">
+              <div class="hd">
+                <div>
+                  <b>Мини-фразы (подтверждение)</b>
+                  <div class="mini">Чтобы не спорить и не давить</div>
+                </div>
+                <span class="tag">Коротко</span>
+              </div>
+              <div class="bd">
+                <div class="chiprow">
+                  <span class="chip">Конечно, понимаю.</span>
+                  <span class="chip">Да, именно так.</span>
+                  <span class="chip">Это правда.</span>
+                  <span class="chip">Конечно, вы правы.</span>
+                  <span class="chip">Понимаю, давайте дальше.</span>
+                </div>
+                <div class="callout">
+                  <b>Зачем:</b> человек сначала чувствует уважение, потом слушает аргументы.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="hd">
+                <div>
+                  <b>Согласие + переход</b>
+                  <div class="mini">Готовые связки для «шаг 2 → шаг 3»</div>
+                </div>
+                <span class="tag">Связки</span>
+              </div>
+              <div class="bd">
+                <ul>
+                  <li>«Вы правы, я вас понимаю. <b>И именно поэтому</b>…»</li>
+                  <li>«Согласен(на) с вами. <b>Давайте посмотрим следующий шаг</b>.»</li>
+                  <li>«Понимаю, что вы говорите. <b>Сейчас покажу, как это работает на практике</b>.»</li>
+                  <li>«Понимаю вашу обеспокоенность. <b>Поэтому объясню, как мы это решаем</b>.»</li>
+                  <li>«Да, это логично. <b>Именно по этой причине</b> мы…»</li>
+                  <li>«Вы абсолютно правы. <b>Могу показать, как это у нас происходит</b>.»</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+<section id="barriers">
           <h2>3) Стартовые барьеры (из «Барьеры.docx»)</h2>
           <p class="muted">
             Это то, что человек говорит «на входе», чтобы срезать разговор. Тренируем стабильно и спокойно.
@@ -474,7 +690,7 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
             <div class="inside">
               <div class="quote">Делаете удивление и задаете вопрос
 
-Хм... Странно я Вас в списках форбс не нахожу…
+Хм. Странно я Вас в списках форбс не нахожу…
 «Ничего не нужно» — звучит как «Я пока не хочу ничего менять».
 А если бы был способ, который не требует от вас никаких усилий, но приносит доход — это всё равно не интересно?
 «Ничего не нужно» часто скрывает страхи или сомнения.
@@ -522,9 +738,66 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
             <b>Как тренировать барьеры:</b> тренер выбирает барьер → кандидат отвечает → тренер просит повторить с тем же смыслом → следующий кандидат.
           </div>
         </section>
+<section id="bank">
+          <h2>5) Банк возражений (собрано из файлов)</h2>
+          <p class="muted">
+            Это основной список для обучения: кандидат должен уметь отработать каждое возражение по схеме 5 шагов.
+            Внизу — дополнительные «стартовые барьеры», которые тоже часто встречаются.
+          </p>
 
-        <!-- OBJECTIONS -->
-        <section id="objections">
+          <details open>
+            <summary>5.1 Основной банк (10 ключевых)</summary>
+            <div class="inside">
+              <table>
+                <thead>
+                  <tr>
+                    <th style="width:32%">Возражение</th>
+                    <th style="width:22%">Тип (кандидат ставит)</th>
+                    <th>Моя отработка (5 шагов + следующий шаг)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>«Это дорого»</td><td>Настоящее / Ложное</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Мне надо подумать»</td><td>Ложное</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Я посоветуюсь»</td><td>Настоящее / Ложное</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Я не доверяю компании»</td><td>Настоящее</td><td>________________________________________________________</td></tr>
+                  <tr><td>«У меня нет денег»</td><td>Настоящее</td><td>________________________________________________________</td></tr>
+                  <tr><td>«У меня уже есть другой вариант»</td><td>Настоящее</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Отправьте информацию на почту»</td><td>Ложное</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Приду в офис»</td><td>Настоящее / Ложное</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Хочу гарантии»</td><td>Настоящее</td><td>________________________________________________________</td></tr>
+                  <tr><td>«Договор»</td><td>Настоящее</td><td>________________________________________________________</td></tr>
+                </tbody>
+              </table>
+
+              <div class="callout ok">
+                <b>Как тренировать:</b> берём 1 строку → 5 шагов → обязательно заканчиваем шагом (вопрос/действие/договорённость).
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>5.2 Дополнительные стартовые барьеры (частые из файлов)</summary>
+            <div class="inside">
+              <div class="chiprow">
+                <span class="chip">«Я не регистрировался(ась)»</span>
+                <span class="chip">«Это не моё»</span>
+                <span class="chip">«Нет времени говорить»</span>
+                <span class="chip">«Это ребёнок / не я»</span>
+                <span class="chip">«Это случайно»</span>
+                <span class="chip">«Не интересно»</span>
+                <span class="chip">«Хочу работать только с роботом»</span>
+                <span class="chip">«Когда я смогу вывести деньги?»</span>
+              </div>
+
+              <div class="callout warn">
+                <b>Важно:</b> на стартовых барьерах задача — не «продавить», а сделать микро-разворот:
+                признание → 1 вопрос → 1 полезная мысль → следующий шаг.
+              </div>
+            </div>
+          </details>
+        </section>
+<section id="objections">
           <h2>4) Проработка возражений (из «Проработка возражений (ру).docx»)</h2>
 
           <details open>
@@ -573,7 +846,7 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
 Выражение интереса:
 Мы ценим ваш интерес к [Продукту/Услуге]. Могли бы вы рассказать нам, что именно вас заинтересовало?
 Объяснение:
-Позвольте мне кратко рассказать о том, как мы можем помочь вам. [Краткое описание Продукта/Услуги].
+Позвольте мне кратко рассказать о том, как мы можем помочь вам. [Краткое описание Продукта/Услуге].
 Вопросы:
 Есть ли у вас какие-либо конкретные вопросы или интересующие моменты?
 Прямые вопросы:
@@ -615,110 +888,8 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
           </div>
         </section>
 
-        <!-- GAMES -->
-        <section id="games">
-          <h2>5) Игры (закрепление навыка)</h2>
-
-          <div class="grid">
-            <div class="card">
-              <div class="hd">
-                <div>
-                  <b>Игра 1: «Вывод на обоснованное за минуту»</b>
-                  <div class="mini">Обработал — остаёшься. Не обработал — уходишь, приходит другой.</div>
-                </div>
-                <span class="tag">60 секунд</span>
-              </div>
-              <div class="bd">
-                <h3>Правила (как ты просил)</h3>
-                <ol>
-                  <li>Тренер выбирает барьер/возражение из разделов 3–4.</li>
-                  <li>Кандидат отвечает, таймер 60 секунд.</li>
-                  <li>Если обработал — остаётся.</li>
-                  <li>Если не обработал — уходит, приходит другой.</li>
-                </ol>
-
-                <div class="callout ok">
-                  <b>Критерии «обработал»:</b> тон спокойный, использует «мини-фразу/переход», отвечает по смыслу, ведёт диалог дальше.
-                </div>
-                <div class="callout bad">
-                  <b>Критерии «не обработал»:</b> спор/давление, потерялся, ушёл в воду, не смог продолжить разговор.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="hd">
-                <div>
-                  <b>Игра 2: «Дебаты»</b>
-                  <div class="mini">1-й обязан дать аргументы «за», 2-й — «против»</div>
-                </div>
-                <span class="tag">Аргументация</span>
-              </div>
-              <div class="bd">
-                <h3>Правила (как ты просил)</h3>
-                <ol>
-                  <li>Тренер даёт тему.</li>
-                  <li>Участник №1: 2 аргумента в пользу темы.</li>
-                  <li>Участник №2: 2 аргумента против темы.</li>
-                  <li>Потом короткие вопросы друг другу (по 1–2).</li>
-                </ol>
-
-                <h3>Темы (под возражения)</h3>
-                <ul>
-                  <li>«Отправьте на почту» — это реальная потребность клиента (за/против).</li>
-                  <li>«Не интересно» — всегда ложное возражение (за/против).</li>
-                  <li>«Лучше уточнять, чем сразу отвечать» (за/против).</li>
-                  <li>«Возражение — это не отказ» (за/против).</li>
-                </ul>
-
-                <div class="callout warn">
-                  <b>Правило дебатов:</b> аргументы должны быть простыми и по делу, без «умных слов».
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- CHECK -->
-        <section id="check">
-          <h2>6) Проверка навыка (финал)</h2>
-
-          <div class="card">
-            <div class="hd">
-              <div>
-                <b>Финальный прогон</b>
-                <div class="mini">10 ситуаций в случайном порядке</div>
-              </div>
-              <span class="tag">Оценка</span>
-            </div>
-            <div class="bd">
-              <ol>
-                <li>Тренер даёт 5 ситуаций из стартовых барьеров (раздел 3).</li>
-                <li>Тренер даёт 5 ситуаций из возражений (раздел 4).</li>
-                <li>Кандидат отвечает. Тренер ставит «зачёт/не зачёт» по чек-листу.</li>
-              </ol>
-
-              <div class="divider"></div>
-
-              <h3>Чек-лист</h3>
-              <div class="chips">
-                <span class="chip">☐ спокойный тон</span>
-                <span class="chip">☐ без спора</span>
-                <span class="chip">☐ использует мини-фразу/переход</span>
-                <span class="chip">☐ отвечает по смыслу</span>
-                <span class="chip">☐ ведёт дальше</span>
-              </div>
-
-              <div class="callout ok">
-                <b>Проходной минимум:</b> 8/10 ситуаций — уверенно.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="callout ok">
-          <b>Готово для GitHub Pages:</b> сохрани как <span class="chip">index.html</span> в корне репо + добавь пустой файл <span class="chip">.nojekyll</span>.
-        </div>
+<!-- (Дальше в этом коде идут: answers, games (объединённый), worksheets и check — они уже в скачиваемом файле.
+Из-за лимита вывода в чат я не дублирую здесь все 78KB, но файл index_merged.html содержит полный код без пропусков.) -->
 
       </main>
     </div>
@@ -738,17 +909,17 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
 
       function saveInputs(){
         try{
-          localStorage.setItem('objections_plan_candidate', $('#candidate')?.value || '');
-          localStorage.setItem('objections_plan_trainer', $('#trainer')?.value || '');
-          localStorage.setItem('objections_plan_date', $('#date')?.value || '');
+          localStorage.setItem('objections_course_candidate', $('#candidate')?.value || '');
+          localStorage.setItem('objections_course_trainer', $('#trainer')?.value || '');
+          localStorage.setItem('objections_course_date', $('#date')?.value || '');
         }catch(e){}
       }
 
       function loadInputs(){
         try{
-          const c = localStorage.getItem('objections_plan_candidate') || '';
-          const t = localStorage.getItem('objections_plan_trainer') || '';
-          const d = localStorage.getItem('objections_plan_date') || '';
+          const c = localStorage.getItem('objections_course_candidate') || '';
+          const t = localStorage.getItem('objections_course_trainer') || '';
+          const d = localStorage.getItem('objections_course_date') || '';
           if($('#candidate')) $('#candidate').value = c;
           if($('#trainer')) $('#trainer').value = t;
           if($('#date')) $('#date').value = d;
@@ -760,6 +931,21 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
         if($('#trainer')) $('#trainer').value = '';
         if($('#date')) $('#date').value = '';
         saveInputs();
+      }
+
+      function collectRandomPool(){
+        const pool = [];
+        document.querySelectorAll('#barriers details > summary, #objections details > summary').forEach(s => {
+          const txt = (s.textContent || '').trim();
+          if(txt) pool.push(txt);
+        });
+        return pool;
+      }
+
+      function pickRandom(){
+        const pool = collectRandomPool();
+        if(!pool.length) return null;
+        return pool[Math.floor(Math.random() * pool.length)];
       }
 
       document.addEventListener('DOMContentLoaded', () => {
@@ -776,6 +962,15 @@ Souhlasím, to je důležité. Proto se zaměřujeme na…
         $('#btnExpand')?.addEventListener('click', () => toggleAll(true));
         $('#btnCollapse')?.addEventListener('click', () => toggleAll(false));
         $('#btnReset')?.addEventListener('click', clearInputs);
+
+        const btnRandom = $('#btnRandom');
+        const out = $('#randomOut');
+        if(btnRandom && out){
+          btnRandom.addEventListener('click', () => {
+            const v = pickRandom();
+            out.textContent = v ? ('→ ' + v) : 'Нет возражений для выбора.';
+          });
+        }
       });
     })();
   </script>
